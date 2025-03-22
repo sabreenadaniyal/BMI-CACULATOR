@@ -1,5 +1,5 @@
 import streamlit as st
-import emoji
+
 
 # Custom CSS for styling
 st.markdown("""
@@ -31,8 +31,8 @@ st.markdown("""
 st.markdown("<h1 class='title'>💪 BMI Calculator</h1>", unsafe_allow_html=True)
 
 # User Input
-weight = st.number_input(emoji.emojize("🏋️ **Enter weight (kg):**"), min_value=1.0, format="%.2f")
-height = st.number_input(emoji.emojize("📏 **Enter height (m):**"), min_value=0.5, format="%.2f")
+weight = st.number_input(("🏋️ **Enter weight (kg):**"), min_value=1.0, format="%.2f")
+height = st.number_input(("📏 **Enter height (m):**"), min_value=0.5, format="%.2f")
 
 # Calculate BMI
 if st.button("✨ Calculate BMI ✨"):
